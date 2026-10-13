@@ -1,4 +1,4 @@
-name: Welcome to the party (outputs)
+name: Welcome to the party (outputs.yaml)
 on:
   workflow_dispatch:
 jobs:
