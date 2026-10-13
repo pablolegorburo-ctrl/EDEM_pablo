@@ -1,0 +1,22 @@
+name: Welcome to the party (second)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  say_hello:
+    name: "Let's greet the user!"
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Greet user
+        run: echo "Hello there!"
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Display contents of list.txt
+        run: cat ./.github/workflows/list.txt
+
+      - name: Final step notification
+        run: echo "I am step 4!"
